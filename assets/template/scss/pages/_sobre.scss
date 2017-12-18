@@ -1,0 +1,79 @@
+.sobre {
+	header {
+		background-color: #000;
+		border-top: solid 8px #d2ae6d;
+		nav.menu {
+			ul {
+				li {
+					a {
+						color: #fefefe;
+					}
+				}
+			}
+		}
+		.social-media-header {
+			ul {
+				li {
+					a {
+						color: #fefefe;
+					}
+				}
+			}
+		}
+	}
+	h1 {
+		font-family: $font-title-1;
+		font-size: 36px;
+	}
+	.detalhe-top {
+		position: relative;
+		&:before {
+			position: absolute;
+			background-image: url(../images/before-about.png);
+			content: '';
+			bottom: -280px;
+			left: 0;
+			width: 100%;
+			height: 320px;
+			display: block;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+	.bg-about {
+		background-image: url(../images/arma-sobre.jpg);
+		height: 800px;
+		width: 100%;
+		display: block;
+		z-index: 9;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	.valores {
+		background-color: #c6a260;
+		padding: 50px 0 100px 0;
+		position: relative;
+		&:before {
+			position: absolute;
+			background-image: url(../images/about-after.png);
+			content: '';
+			top: -311px;
+			left: 0;
+			width: 100%;
+			height: 320px;
+			display: block;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		img {
+			margin-bottom: 40px;
+		}
+		h3 {
+			font-family: $font-title-1;
+			font-size: 45px;
+			margin-bottom: 40px;
+			text-transform: uppercase;
+		}
+	}
+}

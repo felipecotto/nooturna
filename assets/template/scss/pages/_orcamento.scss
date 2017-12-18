@@ -1,0 +1,20 @@
+.banner-orcamento {
+	background-image: url(../images/banner-orcamento.jpg);
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: top left;
+	margin-bottom: 120px;
+	padding: 70px 0;
+	text-align: center;
+	h1 {
+		font-family: $font-title-1;
+		color: $primary-yellow;
+		small {
+			font-family: 'Nunito', sans-serif;
+			letter-spacing: 1px; 
+			font-size: 22px;
+			color: #fff;
+			font-weight: 400;
+		}
+	}
+}

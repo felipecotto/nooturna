@@ -1,0 +1,29 @@
+/**
+ *
+ * Folha de Estilo Principal
+ *
+ */ 
+
+ /*----------  Libraries  ----------*/
+ @import "libraries/bootstrap/bootstrap";
+ @import "libraries/font-awesome/font-awesome";
+
+ @import "pages/_base";  
+
+ @import "helpers/_colors";
+ @import "helpers/_helpers";
+
+  /*----------  Layouts  ----------*/
+ @import "layouts/_header";
+ @import "layouts/_footer";
+
+/*----------  Páginas e Sessões  ----------*/
+@import "pages/_home";
+@import "pages/_contato";
+@import "pages/_orcamento";
+@import "pages/_sobre";
+@import "pages/_servicos";
+@import "pages/404";  
+
+/*----------  Helpers Medias  ----------*/ 
+

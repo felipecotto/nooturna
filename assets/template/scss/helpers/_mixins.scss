@@ -1,0 +1,146 @@
+/**
+ * Mixins Globais
+ * Além dos mixins do tema e do Twitter Booststrap 4 também está disponível os poderosos mixins e funções da biblioteca Bourbon http://bourbon.io/docs/.
+ *
+ *
+**/
+
+// Clearfix
+@mixin clearfix {
+
+	&:after{
+		content: '';
+		clear: both;
+		display: block;		
+	}
+}
+
+// FontAwesome
+@mixin fonticon() {
+    font: normal normal normal 2em/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+// Flaticon
+@mixin flaticon() {
+    font: normal normal normal 2em/1 Flaticon;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+// Icomoon
+@mixin icomoon() {
+    font: normal normal normal 2em/1 icomoon;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+// arrow
+@mixin arrow($icon) {
+    font-family: 'arrows' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+
+    $content: "\e900"; 
+
+    @if $icon == up {
+      $content: "\e903";
+    } @else if $icon == left  {
+      $content: "\e901";      
+    } @else if $icon == right  {
+      $content: "\e902";
+    } @else {
+      $content: "\e900";
+    }
+    content: $content;
+}
+
+// Positions
+@mixin absolute_all() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin absolute_centered() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absolute_vcentered() {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+@mixin absolute_hcentered() {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// highlight
+@function highlight($color, $amount, $threshold: 50%){
+  @if lightness($color) > $threshold{
+    @return darken($color, $amount);
+  }
+  @if lightness($color) <= $threshold{
+    @return lighten($color, $amount);
+  }
+  @return $color;
+}
+
+@mixin hoverActiveFocus() {
+    &:hover, &:active, &:focus {
+        @content;
+    }
+}
+
+// Paceholder
+@mixin placeholder {
+
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}
+
+// Selection
+@mixin selection($current-selector: false) {
+
+  @if $current-selector {
+    &::-moz-selection {
+      @content;
+    }
+
+    &::selection {
+      @content;
+    }
+  } @else {
+    ::-moz-selection {
+      @content;
+    }
+
+    ::selection {
+      @content;
+    }
+  }
+} 

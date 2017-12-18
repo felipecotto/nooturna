@@ -1,0 +1,58 @@
+.servicos {
+	header {
+		background-color: #000;
+		border-top: solid 8px #d2ae6d;
+		nav.menu {
+			ul {
+				li {
+					a {
+						color: #fefefe;
+					}
+				}
+			}
+		}
+		.social-media-header {
+			ul {
+				li {
+					a {
+						color: #fefefe;
+					}
+				}
+			}
+		}
+	}
+	.banner-servicos  {
+		background-size: cover;
+		min-height: 400px;
+		background-position: center;
+		margin-bottom: 100px;
+		&.patrimonial {
+			background-image: url(../images/capa-patrimonial.jpg);
+		}
+		&.capa-portaria {
+			background-image: url(../images/capa-portaria.jpg);
+		}
+		&.seguranca-pessoal {
+			background-image: url(../images/capa-seguranca-pessoal.jpg);
+		}
+		&.detetive {
+			background-image: url(../images/capa-detetive.jpg);
+		}
+		&.escolta {
+			background-image: url(../images/capa-escolta.jpg);
+		}
+		&.eventos {
+			background-image: url(../images/capa-eventos.jpg);
+		}
+		&.festa {
+			background-image: url(../images/capa-festa.jpg);
+		}
+		&.terceirizacao {
+			background-image: url(../images/capa-terceirizacao.jpg);
+		}
+	}
+	h1 {
+		font-family: $font-title-1;
+		font-size: 36px;
+	}
+}

@@ -2,6 +2,12 @@
 	header {
 		background-color: #000;
 		border-top: solid 8px #d2ae6d;
+		.logo-escuro {
+			display: block;
+		}
+		.logo-claro {
+			display: none;
+		}
 		nav.menu {
 			ul {
 				li {
@@ -24,31 +30,41 @@
 	h1 {
 		font-family: $font-title-1;
 		font-size: 36px;
+		margin-bottom: 50px;
 	}
 	.detalhe-top {
 		position: relative;
+		padding-bottom: 50px;
 		&:before {
-			position: absolute;
-			background-image: url(../images/before-about.png);
-			content: '';
-			bottom: -280px;
-			left: 0;
-			width: 100%;
-			height: 320px;
-			display: block;
-			background-size: cover;
-			background-repeat: no-repeat;
+		// 	position: absolute;
+		// 	z-index: 5;
+		// 	background-image: url(../images/before-about.png);
+		// 	content: '';
+		// 	bottom: -285px;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 320px;
+		// 	display: block;
+		// 	background-size: cover;
+		// 	background-repeat: no-repeat;
 		}
 	}
 	.bg-about {
-		background-image: url(../images/arma-sobre.jpg);
-		height: 800px;
-		width: 100%;
-		display: block;
-		z-index: 9;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
+		position: relative; 
+		height: 1000px;
+		&:before {
+			background-image: url(../images/bond.png);
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			z-index: 1;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			top: 0;
+			left: 0;
+		}
 	}
 	.valores {
 		background-color: #c6a260;
@@ -62,18 +78,34 @@
 			left: 0;
 			width: 100%;
 			height: 320px;
+			z-index: 2;
 			display: block;
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
 		img {
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 		}
 		h3 {
 			font-family: $font-title-1;
 			font-size: 45px;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 			text-transform: uppercase;
+		}
+		.detalhe-missao {
+			position: relative; 
+			&:before {
+				position: absolute;
+				background-image: url(../images/detalhe-missao.png);
+				content: '';
+				top: -15px;
+				right: -34px;
+				width: 60%;
+				height: 60%;
+				display: block;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
 		}
 	}
 }

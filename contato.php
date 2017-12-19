@@ -13,6 +13,10 @@
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="body-white">
+		<?php
+			$pagina = "contato";
+		?>
+
 		<?php include 'layouts/_header_interns.php';?>
 
 		<section class="map mb-70">
@@ -20,9 +24,13 @@
 		</section>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-12 foo">
+					<h1 class="title-zero-1 mb-30">Contato</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 foo">
 					<form action="" class="form-contact">
-						<h2>Contato</h2>
 						<div class="form-group">
 							<label for="exampleInputEmail1">Seu nome (obrigatório)</label>
 							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
@@ -49,7 +57,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-lg-4 offset-lg-1 box-contato">
+				<div class="col-lg-4 offset-lg-1 box-contato foo">
 					<h4>Sorocaba</h4>
 					<h4>Administração</h4>
 					<a href="#" class="email">email:nooturna@nooturna.com.br</a>

@@ -13,17 +13,24 @@
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="servicos">
+		<?php
+			$pagina = "servicos";
+		?>
+		
 		<?php include 'layouts/_header_interns.php';?>
 		
 		<section class="banner-servicos escolta">
 			
 		</section>		
 		<div class="container mb-100">
-			<div class="row">
+			<div class="row foo">
 				<div class="col-lg-6">
-
 					<img src="assets/dist/images/icon-escolta-armada.png" alt="Escolta Armada" class="img-fluid m-0-auto d-block mb-30">
-					<h1>Escolta Armada</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 foo">
+					<h1 class="text-center">Escolta Armada</h1>
 
 					<p>A segurança nas estradas e rodovias do Brasil é fator importante para empresas de transporte ou qualquer empresa que precise movimentar seus produtos pelo território nacional.  </p>
 
@@ -36,7 +43,7 @@
 					<p>Entre em contato conosco e solicite seu orçamento sem compromisso.</p>
 
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 foo">
 					<img src="assets/dist/images/img-escolta-armada.png" alt="" class="img-fluid d-block m-0-auto">
 				</div>
 			</div>

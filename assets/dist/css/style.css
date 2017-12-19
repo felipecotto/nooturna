@@ -11423,9 +11423,9 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   background-color: #e6e7e8;
   font-family: 'Nunito', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: #282828;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
 }
 
 body.home {
@@ -11436,16 +11436,16 @@ body.body-white {
   background-color: #fff;
 }
 
-.bg_video {
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000;
-  background: url(../images/video/bg-video.png) no-repeat;
-  background-size: cover;
+p {
+  text-align: justify;
+}
+
+.container-custom {
+  max-width: 1320px;
+}
+
+.container-min {
+  max-width: 960px;
 }
 
 .swiper-container {
@@ -11468,7 +11468,8 @@ body.body-white {
 
 .button-rounded {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -11478,12 +11479,21 @@ body.body-white {
   border-radius: .25rem;
   font-family: "zeroes_1regular";
   text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
 }
 
 .button-rounded.outline {
   border: solid 3px #282828;
   border-radius: 20px;
   color: #282828;
+}
+
+.button-rounded:hover, .button-rounded:focus {
+  text-decoration: none;
+  background-color: #000;
+  color: #d2ae6d;
+  border-color: #000;
 }
 
 .c-white {
@@ -11532,54 +11542,83 @@ body.body-white {
 }
 
 /*----------  Layouts  ----------*/
-header {
+header.header-home {
+  position: relative;
   padding: 15px 0;
   background-color: #e9ecf3;
   border-top: solid 8px #d2ae6d;
 }
 
-header nav.menu ul {
+header.header-home .logo-escuro {
+  display: none;
+}
+
+header.header-home .logo-claro {
+  display: block;
+}
+
+header.header-home.scroll-to-fixed-fixed {
+  background-color: #000;
+  border-top: none;
+}
+
+header.header-home.scroll-to-fixed-fixed .logo-escuro {
+  display: block;
+}
+
+header.header-home.scroll-to-fixed-fixed .logo-claro {
+  display: none;
+}
+
+header.header-home.scroll-to-fixed-fixed nav.menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-header nav.menu ul li {
+header.header-home.scroll-to-fixed-fixed nav.menu ul li {
   display: inline-block;
 }
 
-header nav.menu ul li a {
+header.header-home.scroll-to-fixed-fixed nav.menu ul li a {
   font-family: "zeroes_1regular";
-  color: #201e1e;
+  color: #e9ecf3;
   font-size: 12px;
   letter-spacing: 2px;
-  padding: 20px 6px;
+  padding: 20px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
 }
 
-header nav.menu ul li a.open-submenu {
+header.header-home.scroll-to-fixed-fixed nav.menu ul li a:hover {
+  text-decoration: none;
+  color: #d2ae6d;
+}
+
+header.header-home.scroll-to-fixed-fixed nav.menu ul li a.open-submenu {
   position: relative;
 }
 
-header nav.menu ul ul.sub-menu {
+header.header-home.scroll-to-fixed-fixed nav.menu ul ul.sub-menu {
   display: none;
 }
 
-header nav.menu ul ul.sub-menu.active {
+header.header-home.scroll-to-fixed-fixed nav.menu ul ul.sub-menu.active {
   display: block;
   position: absolute;
   text-align: left;
   background-color: #000;
   border-top: solid 8px #d2ae6d;
-  top: 58px;
+  top: 54px;
   padding: 15px;
   z-index: 9;
 }
 
-header nav.menu ul ul.sub-menu.active li {
+header.header-home.scroll-to-fixed-fixed nav.menu ul ul.sub-menu.active li {
   display: block;
 }
 
-header nav.menu ul ul.sub-menu.active li a {
+header.header-home.scroll-to-fixed-fixed nav.menu ul ul.sub-menu.active li a {
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
@@ -11587,24 +11626,236 @@ header nav.menu ul ul.sub-menu.active li a {
   padding: 10px 0;
   display: block;
   color: #fff;
+  transition: all 0.3s ease-out;
 }
 
-header nav.menu ul ul.sub-menu.active li a:hover {
+header.header-home.scroll-to-fixed-fixed nav.menu ul ul.sub-menu.active li a:hover {
   text-decoration: none;
 }
 
-header .social-media-header ul {
+header.header-home.scroll-to-fixed-fixed .social-media-header ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-header .social-media-header ul li {
+header.header-home.scroll-to-fixed-fixed .social-media-header ul li {
   display: inline-block;
 }
 
-header .social-media-header ul li a {
+header.header-home.scroll-to-fixed-fixed .social-media-header ul li a {
+  color: #e9ecf3;
+  background-color: #000;
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+header.header-home.scroll-to-fixed-fixed .social-media-header ul li a:hover {
+  background-color: #d2ae6d;
+}
+
+header.header-home nav.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header.header-home nav.menu ul li {
+  display: inline-block;
+}
+
+header.header-home nav.menu ul li a {
+  font-family: "zeroes_1regular";
   color: #201e1e;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 20px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+header.header-home nav.menu ul li a:hover {
+  text-decoration: none;
+  color: #d2ae6d;
+}
+
+header.header-home nav.menu ul li a.open-submenu {
+  position: relative;
+}
+
+header.header-home nav.menu ul ul.sub-menu {
+  display: none;
+}
+
+header.header-home nav.menu ul ul.sub-menu.active {
+  display: block;
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  border-top: solid 8px #d2ae6d;
+  top: 54px;
+  padding: 15px;
+  z-index: 9;
+}
+
+header.header-home nav.menu ul ul.sub-menu.active li {
+  display: block;
+}
+
+header.header-home nav.menu ul ul.sub-menu.active li a {
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+header.header-home nav.menu ul ul.sub-menu.active li a:hover {
+  text-decoration: none;
+}
+
+header.header-home .social-media-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header.header-home .social-media-header ul li {
+  display: inline-block;
+}
+
+header.header-home .social-media-header ul li a {
+  color: #e9ecf3;
+  background-color: #000;
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+header.header-home .social-media-header ul li a:hover {
+  background-color: #d2ae6d;
+}
+
+header.header-internas {
+  padding: 15px 0;
+  background-color: #e9ecf3;
+  border-top: solid 8px #d2ae6d;
+}
+
+header.header-internas .logo-escuro {
+  display: none;
+}
+
+header.header-internas .logo-claro {
+  display: block;
+}
+
+header.header-internas nav.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header.header-internas nav.menu ul li {
+  display: inline-block;
+}
+
+header.header-internas nav.menu ul li a {
+  font-family: "zeroes_1regular";
+  color: #201e1e;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 20px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+header.header-internas nav.menu ul li a.active {
+  color: #d2ae6d;
+}
+
+header.header-internas nav.menu ul li a:hover {
+  text-decoration: none;
+  color: #d2ae6d;
+}
+
+header.header-internas nav.menu ul li a.open-submenu {
+  position: relative;
+}
+
+header.header-internas nav.menu ul ul.sub-menu {
+  display: none;
+}
+
+header.header-internas nav.menu ul ul.sub-menu.active {
+  display: block;
+  position: absolute;
+  text-align: left;
+  background-color: #000;
+  border-top: solid 8px #d2ae6d;
+  top: 54px;
+  padding: 15px;
+  z-index: 9;
+}
+
+header.header-internas nav.menu ul ul.sub-menu.active li {
+  display: block;
+}
+
+header.header-internas nav.menu ul ul.sub-menu.active li a {
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+header.header-internas nav.menu ul ul.sub-menu.active li a:hover {
+  text-decoration: none;
+}
+
+header.header-internas .social-media-header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header.header-internas .social-media-header ul li {
+  display: inline-block;
+}
+
+header.header-internas .social-media-header ul li a {
+  color: #e9ecf3;
+  background-color: #000;
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+header.header-internas .social-media-header ul li a:hover {
+  background-color: #d2ae6d;
 }
 
 footer {
@@ -11621,6 +11872,7 @@ footer .endereco-footer {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 14px;
+  text-align: right;
 }
 
 footer .endereco-footer span {
@@ -11641,18 +11893,56 @@ footer .social-media-footer ul li a {
   background-color: #d2ae6d;
   color: #000;
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
+  margin-right: 10px;
+  font-size: 26px;
   text-align: center;
-  line-height: 35px;
+  line-height: 45px;
+  border: solid 2px #d2ae6d;
+  transition: all 0.3s ease-out;
+}
+
+footer .social-media-footer ul li a:hover {
+  color: #d2ae6d;
+  background-color: transparent;
 }
 
 /*----------  Páginas e Sessões  ----------*/
 .home header {
-  position: fixed;
   width: 100%;
   z-index: 999;
+}
+
+.home .video {
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .home .video {
+    display: none;
+  }
+}
+
+.home .video .assinatura {
+  position: absolute;
+  bottom: 70px;
+  left: calc(50% - 240px);
+}
+
+.home .video .bg_video {
+  right: 0;
+  bottom: 0;
+  z-index: -1000;
+  background: url(../images/video/bg-video.png) no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: block;
+  min-width: 65%;
+  width: 65%;
 }
 
 .quote {
@@ -11674,9 +11964,8 @@ footer .social-media-footer ul li a {
 
 .quote h3 {
   text-transform: uppercase;
-  font-size: 28px;
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 26px;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -11689,6 +11978,7 @@ footer .social-media-footer ul li a {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: inline-block;
 }
 
 .home-social-media ul li {
@@ -11696,9 +11986,188 @@ footer .social-media-footer ul li a {
 }
 
 .home-social-media ul li a {
+  color: #fafafa;
+  font-size: 30px;
+  background-color: #000;
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: solid 2px  #000;
+  transition: all 0.3s ease-out;
+}
+
+.home-social-media ul li a:hover {
+  background-color: transparent;
   color: #000;
-  font-size: 40px;
-  padding-right: 15px;
+}
+
+.home-social-media h2 {
+  display: inline-block;
+}
+
+.banner {
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.banner.banner-01 {
+  background-image: url(../images/banners/banner-rotativo-01.jpg);
+  padding: 30px 50px;
+  -ms-flex-align: end;
+  align-items: end;
+}
+
+.banner.banner-01 a.social {
+  color: #000;
+  background-color: #d2ae6d;
+  border: solid 2px #d2ae6d;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 22px;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+.banner.banner-01 a.social:hover, .banner.banner-01 a.social:focus {
+  background-color: transparent;
+  color: #d2ae6d;
+}
+
+.banner.banner-02 {
+  background-image: url(../images/banners/banner-rotativo-02.jpg);
+  padding: 40px;
+  -ms-flex-align: end;
+  align-items: end;
+}
+
+.banner.banner-02 h1 {
+  font-size: 65px;
+  font-family: "zeroes_1regular";
+}
+
+.banner.banner-02 p {
+  font-size: 20px;
+  text-align: initial;
+  font-weight: 600;
+}
+
+.banner.banner-02 a.action-banner-02 {
+  color: #710000;
+  border: solid 2px #710000;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.450rem 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 20px;
+  font-family: "zeroes_1regular";
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin-bottom: 20px;
+}
+
+.banner.banner-02 a.action-banner-02:hover {
+  background-color: #710000;
+  color: #e9ecf3;
+}
+
+.banner.banner-02 .asterisco {
+  color: #710000;
+}
+
+.banner.banner-03 {
+  background-image: url(../images/banners/banner-rotativo-03.jpg);
+  background-position: bottom left;
+  color: #fff;
+  -ms-flex-align: end;
+  align-items: end;
+  padding-bottom: 30px;
+}
+
+.banner.banner-03 h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "zeroes_1regular";
+  letter-spacing: 2px;
+}
+
+.banner.banner-03 p {
+  font-weight: 600;
+}
+
+.banner.banner-03 a.action-banner-03 {
+  color: #e6bc70;
+  border: solid 2px #e6bc70;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.450rem 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 20px;
+  font-family: "zeroes_1regular";
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin-bottom: 20px;
+}
+
+.banner.banner-03 a.action-banner-03:hover {
+  background-color: #e6bc70;
+  color: #000;
+}
+
+.banner.banner-04 {
+  background-image: url(../images/banners/banner-rotativo-04.jpg);
+  background-position: center;
+}
+
+.banner.banner-04 p {
+  color: #710000;
+  margin-top: 140px;
+}
+
+.banner.banner-04 a {
+  color: #710000;
+  border: solid 2px #710000;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.450rem 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 20px;
+  font-family: "zeroes_1regular";
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin-bottom: 20px;
+}
+
+.banner.banner-04 a:hover {
+  background-color: #710000;
+  color: #e9ecf3;
 }
 
 .form-contact h2 {
@@ -11778,6 +12247,14 @@ footer .social-media-footer ul li a {
   border-top: solid 8px #d2ae6d;
 }
 
+.sobre header .logo-escuro {
+  display: block;
+}
+
+.sobre header .logo-claro {
+  display: none;
+}
+
 .sobre header nav.menu ul li a {
   color: #fefefe;
 }
@@ -11789,34 +12266,31 @@ footer .social-media-footer ul li a {
 .sobre h1 {
   font-family: "zeroes_1regular";
   font-size: 36px;
+  margin-bottom: 50px;
 }
 
 .sobre .detalhe-top {
   position: relative;
-}
-
-.sobre .detalhe-top:before {
-  position: absolute;
-  background-image: url(../images/before-about.png);
-  content: '';
-  bottom: -280px;
-  left: 0;
-  width: 100%;
-  height: 320px;
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding-bottom: 50px;
 }
 
 .sobre .bg-about {
-  background-image: url(../images/arma-sobre.jpg);
-  height: 800px;
+  position: relative;
+  height: 1000px;
+}
+
+.sobre .bg-about:before {
+  background-image: url(../images/bond.png);
+  content: '';
+  position: absolute;
+  height: 100%;
   width: 100%;
-  display: block;
-  z-index: 9;
+  z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  top: 0;
+  left: 0;
 }
 
 .sobre .valores {
@@ -11833,25 +12307,51 @@ footer .social-media-footer ul li a {
   left: 0;
   width: 100%;
   height: 320px;
+  z-index: 2;
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .sobre .valores img {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .sobre .valores h3 {
   font-family: "zeroes_1regular";
   font-size: 45px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.sobre .valores .detalhe-missao {
+  position: relative;
+}
+
+.sobre .valores .detalhe-missao:before {
+  position: absolute;
+  background-image: url(../images/detalhe-missao.png);
+  content: '';
+  top: -15px;
+  right: -34px;
+  width: 60%;
+  height: 60%;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .servicos header {
   background-color: #000;
   border-top: solid 8px #d2ae6d;
+}
+
+.servicos header .logo-escuro {
+  display: block;
+}
+
+.servicos header .logo-claro {
+  display: none;
 }
 
 .servicos header nav.menu ul li a {
@@ -11904,6 +12404,7 @@ footer .social-media-footer ul li a {
 .servicos h1 {
   font-family: "zeroes_1regular";
   font-size: 36px;
+  margin-bottom: 20px;
 }
 
 /*----------  Helpers Medias  ----------*/

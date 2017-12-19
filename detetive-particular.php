@@ -13,16 +13,23 @@
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="servicos">
+		<?php
+			$pagina = "servicos";
+		?>
+		
 		<?php include 'layouts/_header_interns.php';?>
 		
 		<section class="banner-servicos detetive">
 			
 		</section>		
 		<div class="container mb-100">
-			<div class="row">
+			<div class="row foo">
 				<div class="col-lg-6">
-
 					<img src="assets/dist/images/icon-detetive-particular.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto d-block mb-30">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 foo">
 					<h1 class="text-center">Detetive Particular</h1>
 
 					<p>A Nooturna oferece todo tipo de investigação particular, dispomos de uma equipe de profissionais altamente qualificados com anos de experiência prontos para desvendar qualquer dúvida ou mistério</p>
@@ -41,8 +48,8 @@
 
 				</div>
 				<div class="col-lg-6">
-					<img src="assets/dist/images/detetive-1.jpg" alt="" class="img-fluid mb-50">
-					<img src="assets/dist/images/detetive-2.jpg" alt="" class="img-fluid">
+					<img src="assets/dist/images/detetive-1.jpg" alt="" class="img-fluid mb-50 foo">
+					<img src="assets/dist/images/detetive-2.jpg" alt="" class="img-fluid foo">
 				</div>
 			</div>
 		</div>

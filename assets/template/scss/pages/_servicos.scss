@@ -2,6 +2,12 @@
 	header {
 		background-color: #000;
 		border-top: solid 8px #d2ae6d;
+		.logo-escuro {
+			display: block;
+		}
+		.logo-claro {
+			display: none;
+		}
 		nav.menu {
 			ul {
 				li {
@@ -54,5 +60,6 @@
 	h1 {
 		font-family: $font-title-1;
 		font-size: 36px;
+		margin-bottom: 20px;
 	}
 }

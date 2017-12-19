@@ -17,97 +17,142 @@
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="home">
-		<?php include 'layouts/_header.php';?>
 
 		<section class="video">
 			<video autoplay loop poster="assets/dist/images/videotorres.jpg" class="bg_video">
 				<source src="assets/dist/images/video/video-w.webm" type="video/webm">
 				<source src="assets/dist/images/video/video-m.mp4" type="video/mp4">
 			</video> 
+			<img src="assets/dist/images/video/assinatura-video.png" alt="Logo Nooturna" class="img-fluid assinatura">
 		</section>
 
+		<?php include 'layouts/_header.php';?>
 
-		<section class="banner mb-100">
+		<section class="banners mb-100">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="assets/dist/images/banners/banner-rotativo-01.jpg" alt="">
+					<div class="swiper-slide banner banner-01">
+						<div class="container-fluid">
+							<div class="row d-flex align-items-center">
+								<div class="col-lg-6 text-left">
+									<a href="https://www.facebook.com/nooturna/" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
+									<a href="https://www.instagram.com/nooturna/" target="_blank" class="social"><i class="fa fa-instagram"></i></a>
+								</div>
+								<div class="col-lg-6 text-right">
+									<img src="assets/dist/images/banners/logo-banner-01.png" alt="Logo" class="img-fluid">
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="swiper-slide">
-						<img src="assets/dist/images/banners/banner-rotativo-02.jpg" alt="">
+					<div class="swiper-slide banner banner-02">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-5">
+									<h1>Staff Eventos</h1>
+									<p><span class="title-zero-2 text-uppercase">Nooturna</span> desenvolveu pacotes diferenciados pensando na organização de casamentos e eventos em geral!</p>
+									<div class="text-center">
+										<a href="eventos-staff.php" class="action-banner-02">Saiba Mais</a>
+									</div>
+									<p><span class="asterisco">*</span>Casamentos
+									<span class="asterisco">*</span>Aniversários
+									<span class="asterisco">*</span>Formaturas</p>
+									<p><span class="asterisco">*</span>Inaugurações
+									<span class="asterisco">*</span>Eventos 
+									<span class="asterisco">*</span>Shows
+									<span class="asterisco">*</span>Corporativos</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="swiper-slide">
-						<img src="assets/dist/images/banners/banner-rotativo-03.jpg" alt="">
+					<div class="swiper-slide banner banner-03">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4 offset-lg-8">
+									<h2>Investigação Conjugal</h2>
+									<p>Os serviços de detetive pasticular são realizados com a máxima discrição visando preservar a identidade e minimizar exposição à riscos de nossos clientes.</p>
+									<a href="detetive-particular.php" class="action-banner-03">Saiba Mais</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="swiper-slide">
-						<img src="assets/dist/images/banners/banner-rotativo-04.jpg" alt="">
+					<div class="swiper-slide banner banner-04">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6 offset-lg-6 text-center">
+									<p>Serviços de Segurança para casamentos e eventos em geral!</p>
+									<a href="eventos-staff.php#festa" class="action-banner-03">Saiba Mais</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<div class="container servicos-home">
-			<div class="row">
+		<div class="container container-min servicos-home">
+			<div class="row foo">
 				<div class="offset-lg-3 col-lg-6">
 					<img src="assets/dist/images/logo-nooturna-grande.png" alt="Logo Nooturna" class="img-fluid m-0-auto mb-150">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 bar text-center">
 					<a href="seguranca-patrimonial.php"><img src="assets/dist/images/seguranca-patrimonial.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
 					<h3>Segurança Patrimonial</h3>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 bar text-center">
 					<a href="seguranca-pessoal.php"><img src="assets/dist/images/seguranca-pessoal.png" alt="Segurança Pessoal" class="img-fluid m-0-auto mb-25"></a>
 					<h3>Segurança Pessoal</h3>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 bar text-center">
 					<a href="escolta-armada.php"><img src="assets/dist/images/escolta-armada.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
 					<h3>Escolta Armada</h3>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 bar text-center">
 					<a href="portaria.php"><img src="assets/dist/images/portaria.png" alt="Portaria" class="img-fluid m-0-auto mb-25"></a>
 					<h3>Portaria (Condomínios & Empresas)</h3>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 bar text-center">
 					<a href="detetive-particular.php"><img src="assets/dist/images/detetive-particular.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
 					<h3>Detetive Particular</h3>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 bar text-center">
 					<a href="eventos-staff.php"><img src="assets/dist/images/staff-eventos.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
 					<h3>Staff Eventos</h3>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 bar text-center">
 					<a href="eventos-staff.php#festa"><img src="assets/dist/images/seguranca-eventos.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
 					<h3>Segurança Eventos</h3>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 bar text-center">
 					<a href="terceirizacao.php"><img src="assets/dist/images/terceirizacao.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
 					<h3>Terceirização Serviços</h3>
 				</div>
 			</div>
+		</div>
+		<div class="container">
 			<div class="row d-flex align-items-center">
-				<div class="col-lg-8">
+				<div class="col-lg-8 foo">
 					<img src="assets/dist/images/cell-mockup.png" alt="Redes Sociais Nooturna" class="img-fluid">
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 bar">
 					<aside class="home-social-media">
-						<h2 class="title-zero-1">follow up</h2>
 						<ul>
-							<li><a href=""><i class="fa fa-facebook"></i></a></li>
-							<li><a href=""><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://www.facebook.com/nooturna/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/nooturna/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 						</ul>
+						<h2 class="title-zero-1">follow up</h2>
 					</aside>
 				</div>
 			</div>
 		</div>
 		<section class="quote">
 			<div class="container">
-				<h2 class="title-zero-1 text-uppercase">Solicite um orçamento</h2>
-				<h3>Sinônimo de confiança & credibilidade</h3>
-				<img src="assets/dist/images/logo-simbolo.png" alt="Logo Nooturna" class="img-fluid m-0-auto d-block mb-30">
+				<h2 class="title-zero-1 text-uppercase foo">Solicite um orçamento.</h2>
+				<h3 class="foo">Sinônimo de confiança & credibilidade</h3>
+				<img src="assets/dist/images/logo-simbolo.png" alt="Logo Nooturna" class="img-fluid m-0-auto d-block mb-30 foo">
 				<div class="text-center">
-					<a href="orcamento.php" class="button-rounded outline">Orçamento</a>
+					<a href="orcamento.php" class="button-rounded outline foo">Orçamento</a>
 				</div>
 			</div>
 		</section>

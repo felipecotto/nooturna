@@ -13,12 +13,20 @@
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="body-white">
+		<?php
+			$pagina = "trabalhe";
+		?>
+
 		<?php include 'layouts/_header_interns.php';?>
 
 		<div class="container pt-120 mb-70">
 			<div class="row">
-				<div class="col-lg-4">
-					<h1 class="title-zero-1">Trabalhe Conosco</h1>
+				<div class="col-lg-12 foo">
+					<h1 class="title-zero-1 mb-30">Trabalhe Conosco</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 foo">
 					<form action="" class="form-contact">
 						<div class="form-group">
 							<label for="exampleInputEmail1">Seu nome (obrigatório)</label>
@@ -49,9 +57,9 @@
 					</form>
 				</div>
 				<div class="col-lg-4 offset-lg-1">
-					<img src="assets/dist/images/logo-perspective.png" alt="Logo Nooturna" class="img-fluid m-0-auto d-block mb-30">
-					<img src="assets/dist/images/trabalhe-conoso.jpg" alt="Logo Nooturna" class="img-fluid m-0-auto d-block mb-30">
-					<p>Você pode nos enviar seu currículo através do formulário ao lado, ele será avaliado e adicionado ao nosso banco de dados e você poderá ser chamado para trabalhar na Nooturna.</p>
+					<img src="assets/dist/images/logo-perspective.png" alt="Logo Nooturna" class="img-fluid m-0-auto d-block mb-30 foo">
+					<img src="assets/dist/images/trabalhe-conoso.jpg" alt="Logo Nooturna" class="img-fluid m-0-auto d-block mb-30 foo">
+					<p class="foo">Você pode nos enviar seu currículo através do formulário ao lado, ele será avaliado e adicionado ao nosso banco de dados e você poderá ser chamado para trabalhar na Nooturna.</p>
 				</div>
 			</div>
 		</div>

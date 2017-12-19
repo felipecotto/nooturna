@@ -13,18 +13,26 @@
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="servicos body-white">
+		<?php
+			$pagina = "servicos";
+		?>
+		
 		<?php include 'layouts/_header_interns.php';?>
 		
 		<section class="banner-servicos terceirizacao">
 			
 		</section>		
 		<div class="container mb-100">
-			<div class="row">
-				<div class="col-lg-6">
-
-					<img src="assets/dist/images/icon-terceirizacao.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto d-block mb-30">
+			<div class="row mb-30 foo">
+				<div class="col-lg-4">
 					<h1>Terceirização Serviços</h1>
-
+				</div>
+				<div class="col-lg-2">
+					<img src="assets/dist/images/icon-terceirizacao.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto d-block ">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 foo">
 					<p>Para Empresas, Condomínios e Eventos:</p>
 
 					<p>- Serviços de Limpeza e Conservação <br/>
@@ -41,7 +49,7 @@
 					</p>
 
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 foo">
 					<img src="assets/dist/images/terceirizacao-1.jpg" alt="" class="img-fluid mb-50">
 				</div>
 			</div>

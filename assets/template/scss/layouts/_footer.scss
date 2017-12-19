@@ -11,6 +11,7 @@ footer {
 		font-weight: 500;
 		letter-spacing: 1px;
 		font-size: 14px;
+		text-align: right;
 		span {
 			color: $primary-yellow;
 		}
@@ -27,11 +28,20 @@ footer {
 					background-color: $primary-yellow; 
 					color: #000;
 					display: inline-block;
-					width: 35px;
-					height: 35px;
+					width: 45px;
+					height: 45px;
 					border-radius: 50%;
+					margin-right: 10px;
+					font-size: 26px;
 					text-align: center;
-					line-height: 35px;
+					line-height: 45px;
+					border: solid 2px $primary-yellow; 
+					-webkit-transition: all 0.3s ease-out; 
+					        transition: all 0.3s ease-out; 
+					&:hover {
+						color: $primary-yellow; 
+						background-color: transparent;
+					}
 				}
 			}
 		}

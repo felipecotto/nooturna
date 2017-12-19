@@ -49,9 +49,9 @@ $font-title-3:'zeroes_3regular';
 body {
 	background-color: #e6e7e8;
 	font-family: 'Nunito', sans-serif;
-	font-weight: 500;
-	font-size: 18px;
-	color: #282828;
+	font-weight: 700;
+	font-size: 14px;
+	color: #000;
 }
 
 body.home {
@@ -62,17 +62,16 @@ body.body-white {
 	background-color: #fff;
 }
 
-.bg_video{
-	// position: fixed; 
-	right: 0; 
-	bottom: 0;
-	min-width: 100%; 
-	min-height: 100%;
-	width: auto; 
-	height: auto; 
-	z-index: -1000;
-	background: url(../images/video/bg-video.png) no-repeat;
-	background-size: cover; 
+p {
+	text-align: justify;
+}
+
+.container-custom {
+	max-width: 1320px;
+}
+
+.container-min {
+	max-width: 960px;
 }
 
 .swiper-container {
@@ -101,7 +100,8 @@ body.body-white {
 // Botões
 .button-rounded {
 	display: inline-block;
-	font-weight: 400;
+	font-weight: 700;
+	letter-spacing: 1px;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
@@ -114,10 +114,19 @@ body.body-white {
 	font-family: $font-title-1;
 	text-transform: uppercase;
 
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-out; 
+	        transition: all 0.3s ease-out; 
 	&.outline {
 		border: solid 3px #282828; 
 		border-radius: 20px;
 		color: #282828;
+	}
+	&:hover, &:focus {
+		text-decoration: none; 
+		background-color: #000;
+		color: #d2ae6d;
+		border-color: #000;
 	}
 }
 

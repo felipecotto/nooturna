@@ -13,17 +13,24 @@
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="servicos">
+		<?php
+			$pagina = "servicos";
+		?>
+		
 		<?php include 'layouts/_header_interns.php';?>
 		
 		<section class="banner-servicos seguranca-pessoal">
 			
 		</section>		
 		<div class="container mb-100">
-			<div class="row">
+			<div class="row foo">
 				<div class="col-lg-6">
-
 					<img src="assets/dist/images/icon-seguranca-pessoal.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto d-block mb-30">
-					<h1>Segurança Pessoal</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 foo">
+					<h1 class="text-center">Segurança Pessoal</h1>
 
 					<p>A Nooturna disponibiliza serviços completos para Segurança Pessoal, contamos com profissionais que possuem anos de experiência e são altamente capacitados, prontos para agir em qualquer ocasião, garantido a integridade de nossos clientes. </p>
 					<p>O Serviço de segurança pessoal é destinado a empresários, executivos, autoridades, personalidades e seus familiares.</p>
@@ -34,7 +41,7 @@
 					<p>Entre em contato conosco e solicite seu orçamento sem compromisso.</p>
 
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 foo">
 					<img src="assets/dist/images/seguranca-pessoal.jpg" alt="" class="img-fluid">
 				</div>
 			</div>

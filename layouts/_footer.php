@@ -1,10 +1,10 @@
 <footer>
-	<div class="container mb-70">
+	<div class="container mb-30">
 		<div class="row d-flex align-items-baseline">
-			<div class="col-lg-3">
+			<div class="col-lg-4">
 				<img src="assets/dist/images/logo-footer.png" alt="Nooturna" class="img-fluid">
 			</div>
-			<div class="col-lg-3 offset-lg-2">
+			<div class="col-lg-4 offset-lg-1">
 				<img src="assets/dist/images/frase-footer.png" alt="Sinônimo de credibilidade e confiança" class="img-fluid">
 			</div>
 			<div class="col-lg-3 text-right">

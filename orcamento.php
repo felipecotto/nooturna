@@ -13,18 +13,26 @@
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="body-white">
+		<?php
+			$pagina = "orcamento";
+		?>
+
 		<?php include 'layouts/_header_interns.php';?>
 
 		<section class="banner-orcamento">
 			<div class="container">
-				<h1>Solicite seu orçamento <small> É um imenso prazer atende-lo </small></h1>
+				<h1>Solicite seu orçamento <small> É um imenso prazer atendê-lo </small></h1>
 			</div>
 		</section>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-12 foo">
+					<h1 class="title-zero-1 mb-30">Orçamentos</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 foo">
 					<form action="" class="form-contact">
-						<h2>Orçamentos</h2>
 						<div class="mb-30">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Seu nome (obrigatório)</label>
@@ -88,7 +96,7 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-lg-4 offset-lg-1">
+				<div class="col-lg-4 offset-lg-1 foo">
 					<p class="title-zero-1">Envie sua solicitação de Orçamento preenchendo os campos ao lado.</p>
 					<p class="title-zero-1">Em breve nossa equipe responsavel retornará seu contato.</p>
 					<p class="title-zero-1"><strong>Dep. Comercial</strong></p>

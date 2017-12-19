@@ -7,23 +7,30 @@
         <meta name="theme-color" content="#FF045E">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!-- Title -->
-		<title> Segurançca Patrimonial | Grupo Nooturna </title>
+		<title> Segurança Patrimonial | Grupo Nooturna </title>
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/dist/css/style.min.css">
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="servicos">
+		<?php
+			$pagina = "servicos";
+		?>
+
 		<?php include 'layouts/_header_interns.php';?>
 		
 		<section class="banner-servicos patrimonial">
 			
 		</section>		
 		<div class="container mb-100">
-			<div class="row">
+			<div class="row foo">
 				<div class="col-lg-6">
-
 					<img src="assets/dist/images/icon-seguranca-patrimonial.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto d-block mb-30">
-					<h1>segurança patrimonial</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 foo">
+					<h1 class="text-center">Segurança Patrimonial</h1>
 
 					<p>A Nooturna segurança & serviços é sem dúvida a melhor escolha para Segurança Patrimonial, temos anos de experiência no segmento, oferecendo soluções de alta qualidade e eficiência para todos os tipos de clientes. Prestamos o serviço de segurança patrimonial para pessoas físicas, empresas, condomínios e indústrias.</p>
 
@@ -35,8 +42,8 @@
 
 				</div>
 				<div class="col-lg-6">
-					<img src="assets/dist/images/patrimonial-2.jpg" alt="" class="img-fluid mb-50">
-					<img src="assets/dist/images/patrimonial-1.jpg" alt="" class="img-fluid">
+					<img src="assets/dist/images/patrimonial-2.jpg" alt="" class="img-fluid mb-50 foo">
+					<img src="assets/dist/images/patrimonial-1.jpg" alt="" class="img-fluid foo">
 				</div>
 			</div>
 		</div>

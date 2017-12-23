@@ -96,6 +96,23 @@ p {
   -webkit-align-items: center;
   align-items: center;
 }
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+	right: 50px;
+	left: auto;
+	text-align: right;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+	background: #d2ae6d;
+}
 
 // Botões
 .button-rounded {

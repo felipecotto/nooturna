@@ -36,7 +36,7 @@
 
 					<p>A Escolta Armada garante o transporte de carga ou de valores de forma segura.</p>
 					
-					<p>Os serviços de Escolta Armada da Nooturna é de extrema seriedade e oferece para empresas e pessoas físicas técnicas avançadas de inteligência de segurança, para garantir a tranquilidade no transporte de cargas, esta realizada por profissionais altamente treinados e prontos para reagir em qualquer situação, sempre preservando a integridade da carga ou nossos clientes.</p>
+					<p>Os serviços de Escolta Armada da Nooturna é de extrema seriedade e oferece para empresas e pessoas físicas técnicas avançadas em inteligência de segurança, para garantir a tranquilidade no transporte de cargas, esta realizada por profissionais altamente treinados e prontos para reagir em qualquer situação, sempre preservando a integridade da carga ou nossos clientes.</p>
 
 					<p>Todo nosso efetivo utilizado é composto por profissionais previamente selecionados, sem antecedentes criminais, com habilidade técnica e psicológica, atendendo as normas da Polícia Federal, que autoriza e fiscaliza nossa atividade.</p>
 

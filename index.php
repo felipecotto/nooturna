@@ -49,7 +49,7 @@
 							<div class="row">
 								<div class="col-lg-5">
 									<h1>Staff Eventos</h1>
-									<p><span class="title-zero-2 text-uppercase">Nooturna</span> desenvolveu pacotes diferenciados pensando na organização de casamentos e eventos em geral!</p>
+									<p> <img src="assets/dist/images/nt-txt.png" alt="Nooturna" class="img-fluid"> desenvolveu pacotes diferenciados pensando na organização de casamentos e eventos em geral!</p>
 									<div class="text-center">
 										<a href="eventos-staff.php" class="action-banner-02">Saiba Mais</a>
 									</div>
@@ -67,10 +67,13 @@
 					<div class="swiper-slide banner banner-03">
 						<div class="container">
 							<div class="row">
-								<div class="col-lg-4 offset-lg-8">
-									<h2>Investigação Conjugal</h2>
-									<p>Os serviços de detetive pasticular são realizados com a máxima discrição visando preservar a identidade e minimizar exposição à riscos de nossos clientes.</p>
+								<div class="col-lg-4 offset-lg-4">
+									<h2 class="c-yellow">Segurança Patrimonial</h2>
+									<p>A Nooturna segurança & serviços é sem dúvida a melhor escolha para Segurança Patrimonial, temos anos de experiência no segmento, oferecendo soluções de alta qualidade e eficiência para todos os tipos de clientes.</p>
 									<a href="detetive-particular.php" class="action-banner-03">Saiba Mais</a>
+								</div>
+								<div class="col-lg-3 offset-1">
+									<img src="assets/dist/images/escudo-banner.png" alt="Nooturna" class="img-fluid m-0-auto">
 								</div>
 							</div>
 						</div>
@@ -86,6 +89,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</section>
 
@@ -97,35 +101,35 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-3 bar text-center">
-					<a href="seguranca-patrimonial.php"><img src="assets/dist/images/seguranca-patrimonial.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
+					<a href="seguranca-patrimonial.php"><img src="assets/dist/images/seguranca-patrimonial.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25 transform-image"></a>
 					<h3>Segurança Patrimonial</h3>
 				</div>
 				<div class="col-lg-3 bar text-center">
-					<a href="seguranca-pessoal.php"><img src="assets/dist/images/seguranca-pessoal.png" alt="Segurança Pessoal" class="img-fluid m-0-auto mb-25"></a>
+					<a href="seguranca-pessoal.php"><img src="assets/dist/images/seguranca-pessoal.png" alt="Segurança Pessoal" class="img-fluid m-0-auto mb-25 transform-image"></a>
 					<h3>Segurança Pessoal</h3>
 				</div>
 				<div class="col-lg-3 bar text-center">
-					<a href="escolta-armada.php"><img src="assets/dist/images/escolta-armada.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
+					<a href="escolta-armada.php"><img src="assets/dist/images/escolta-armada.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25 transform-image"></a>
 					<h3>Escolta Armada</h3>
 				</div>
 				<div class="col-lg-3 bar text-center">
-					<a href="portaria.php"><img src="assets/dist/images/portaria.png" alt="Portaria" class="img-fluid m-0-auto mb-25"></a>
+					<a href="portaria.php"><img src="assets/dist/images/portaria.png" alt="Portaria" class="img-fluid m-0-auto mb-25 transform-image"></a>
 					<h3>Portaria (Condomínios & Empresas)</h3>
 				</div>
 				<div class="col-lg-3 bar text-center">
-					<a href="detetive-particular.php"><img src="assets/dist/images/detetive-particular.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
+					<a href="detetive-particular.php"><img src="assets/dist/images/detetive-particular.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25 transform-image"></a>
 					<h3>Detetive Particular</h3>
 				</div>
 				<div class="col-lg-3 bar text-center">
-					<a href="eventos-staff.php"><img src="assets/dist/images/staff-eventos.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
+					<a href="eventos-staff.php"><img src="assets/dist/images/staff-eventos.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25 transform-image"></a>
 					<h3>Staff Eventos</h3>
 				</div>
 				<div class="col-lg-3 bar text-center">
-					<a href="eventos-staff.php#festa"><img src="assets/dist/images/seguranca-eventos.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
+					<a href="eventos-staff.php#festa"><img src="assets/dist/images/seguranca-eventos.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25 transform-image"></a>
 					<h3>Segurança Eventos</h3>
 				</div>
 				<div class="col-lg-3 bar text-center">
-					<a href="terceirizacao.php"><img src="assets/dist/images/terceirizacao.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25"></a>
+					<a href="terceirizacao.php"><img src="assets/dist/images/terceirizacao.png" alt="Segurança Patrimonial" class="img-fluid m-0-auto mb-25 transform-image"></a>
 					<h3>Terceirização Serviços</h3>
 				</div>
 			</div>

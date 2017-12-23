@@ -1,3 +1,7 @@
+.c-yellow {
+	color: $primary-yellow;
+}
+
 .home {
 	header {
 		// position: fixed;
@@ -12,9 +16,25 @@
 		@media (max-width: 768px) {
 			display: none;
 		}
+		&:after {
+			position: absolute;
+			content: '';
+			border-right: solid 60px #fff;
+			right: calc(50% - 541px);
+			top: 0;
+			height: 100%;
+		}
+		&:before {
+			position: absolute; 
+			content: '';
+			border-left: solid 60px #fff;
+			left: 134px;
+			top: 0;
+			height: 100%;
+		}
 		.assinatura {
 			position: absolute;
-			bottom: 70px;
+			bottom: 120px;
 			left: calc(50% - 240px);
 		}
 		.bg_video{
@@ -26,8 +46,7 @@
 			background-size: cover; 
 			margin: 0 auto;
 			display: block;
-			min-width: 65%;
-			width: 65%;
+			width: 80%;
 		}
 	}
 }
@@ -56,6 +75,15 @@
 	h3 {
 		font-size: 22px;
 		margin-bottom: 60px;
+		font-weight: 700;
+	}
+	.transform-image {
+	    transform: scale(0.93);
+	    -webkit-transition: all 0.3s ease-out; 
+        transition: all 0.3s ease-out; 
+	    &:hover {
+	    	transform: scale(1);
+	    }
 	}
 }
 
@@ -102,8 +130,8 @@
 	&.banner-01 {
 		background-image: url(../images/banners/banner-rotativo-01.jpg); 
 		padding: 30px 50px;
-		-ms-flex-align: end;
-		align-items: end;
+		-ms-flex-align: flex-end;
+		align-items: flex-end;
 		a.social {
 			color: #000; 
 			background-color: $primary-yellow; 
@@ -127,16 +155,19 @@
 	&.banner-02 {
 		background-image: url(../images/banners/banner-rotativo-02.jpg);
 		padding: 40px;
-		-ms-flex-align: end;
-		align-items: end;
+		-ms-flex-align: flex-end;
+		align-items: flex-end;
 		h1 {
-			font-size: 65px;
+			font-size: 52px;
 			font-family: $font-title-1;
+			letter-spacing: 9px;
 		}
 		p {
-			font-size: 20px;
+			font-size: 19px;
 			text-align: initial;
 			font-weight: 600;
+			text-align: justify;
+			margin-bottom: 5px;
 		}
 		a.action-banner-02 {
 			color: #710000; 
@@ -170,14 +201,15 @@
 		background-image: url(../images/banners/banner-rotativo-03.jpg);
 		background-position: bottom left;
 		color: #fff;
-		-ms-flex-align: end;
-		align-items: end;
+		-ms-flex-align: center;
+		align-items: center;
 		padding-bottom: 30px;
 		h2 {
 			text-transform: uppercase;
-			font-size: 50px;
+			font-size: 46px;
 			font-family: $font-title-1;
-			letter-spacing: 2px;
+			letter-spacing: 5px;
+			text-align: justify;
 		}
 		p {
 			font-weight: 600;
@@ -213,6 +245,7 @@
 		p {
 			color: #710000; 
 			margin-top: 140px;
+			padding-left: 30px;
 		}
 		a {
 			color: #710000; 

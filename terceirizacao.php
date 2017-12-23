@@ -35,7 +35,7 @@
 				<div class="col-lg-6 foo">
 					<p>Para Empresas, Condomínios e Eventos:</p>
 
-					<p>- Serviços de Limpeza e Conservação <br/>
+					<p class="c-yellow">- Serviços de Limpeza e Conservação <br/>
 					- Controle de Acesso <br/>
 					- Seguranças e Apoio <br/>
 					- Serviço de Limpeza antes durante e pós evento <br/>

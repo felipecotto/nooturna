@@ -34,7 +34,7 @@
 					<h1 class="text-center text-uppercase">Empresas e Condomínios</h1>
 					<p>A Nooturna disponibiliza um serviço completo para portarias de empresas ou condomínios verticais e horizontais, nossos equipamentos são de última geração e contamos com profissionais altamente qualificados para garantir o melhor andamento da portaria do seu condomínio ou da sua empresa com a máxima segurança.</p>
 					<p>Todo nosso efetivo utilizado é composto por profissionais previamente selecionados, que não possuem antecedentes criminais, com habilidade técnica e psicológica, atendendo as normas da Polícia Federal, que autoriza e fiscaliza nossa atividade.</p>
-					<p>Temos autorização legal para cuidarmos da portaria de seu condomínio com escoltas armados, além de contarmos com as mais novas tecnologias em segurança com equipamentos de última geração garantindo o que há de melhor no quesito segurança para nossos clientes.</p>
+					<p>Temos autorização legal para cuidarmos da portaria de seu condomínio com escolta armada, além de contarmos com as mais novas tecnologias em segurança com equipamentos de última geração garantindo o que há de melhor no quesito segurança para nossos clientes.</p>
 
 				</div>
 				<div class="col-lg-6 foo">

@@ -52,14 +52,14 @@
 					<div class="col-lg-4 text-center visao-intro">
 						<img src="assets/dist/images/icon-visao.png" alt="Visão" class="img-fluid m-0-auto">
 						<h3>Visão</h3>
-						<p>A Nooturna segurança & serviços vem se consolidando no mercado por sua qualidade e seriedade na implantação e operação de soluções de segurança e serviços para clientes com elevado poder de compra. Nosso objetivo é solucionar e integrar atividades que aperfeiçoem o problema de segurança e serviços na sociedade. Nooturna segurança & serviços: Sinônimo de credibilidade e confiança</p>
+						<p>A Nooturna segurança & serviços vem se consolidando no mercado por sua qualidade e seriedade na implantação e operação de soluções de segurança e serviços para clientes com elevado poder de compra. Nosso objetivo é solucionar e integrar atividades que aperfeiçoem o problema de segurança e serviços na sociedade. Nooturna segurança & serviços: Sinônimo de credibilidade e confiança.</p>
 					</div>
 					<div class="col-lg-4 text-center missao-intro">	
 						<div class="detalhe-missao">
 							<img src="assets/dist/images/icon-missao.png" alt="Missão" class="img-fluid m-0-auto">
 						</div>
 						<h3>Missão</h3>
-						<p>Estar entre as melhores empresas do pais e ser reconhecida pela competência, respeito e honestidade de suas relações com excelência dos serviços.</p>
+						<p>Estar entre as melhores empresas do país e ser reconhecida pela competência, respeito e honestidade de suas relações com excelência dos serviços.</p>
 					</div>
 				</div>
 			</div>

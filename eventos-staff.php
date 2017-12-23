@@ -36,7 +36,7 @@
 
 					<p>Desenvolvemos pacotes diferenciados para a organização de casamentos e eventos em geral, agora você pode solucionar questões como:</p>
 
-					<p>Segurança <br/>
+					<p class="c-yellow">Segurança <br/>
 					Portaria <br/>
 					Limpeza <br/>
 					Chapelaria <br/>
@@ -76,7 +76,7 @@
 					<p>Oferecemos sempre a melhor solução para segurança de acordo com cada necessidade, temos total compromisso com a qualidade do serviço prestado. </p>
 					<p>A Nooturna é registrada e homologada pela Polícia Federal, com isso temos autorização legal para fazer a segurança armada do local.</p>
 
-					<p>omemore despreocupado!</p>
+					<p>Comemore despreocupado!</p>
 					<p>Nooturna a melhor escolha para segurança do seu evento.</p>
 
 

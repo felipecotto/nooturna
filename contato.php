@@ -62,7 +62,7 @@
 					<h4>Administração</h4>
 					<a href="#" class="email">email:nooturna@nooturna.com.br</a>
 					<p>R. Fernando Silva 190 - 2 andar sala 201, Sorocaba/SP</p>
-					<p>Tel: 15 3227.5788 | 15 99110.1111</p>
+					<p>Tel: 15 3227.5788 </p>
 				</div>
 			</div>
 		</div>

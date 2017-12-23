@@ -1,10 +1,10 @@
 <footer>
 	<div class="container mb-30">
 		<div class="row d-flex align-items-baseline">
-			<div class="col-lg-4">
+			<div class="col-lg-4 mb-20-m">
 				<img src="assets/dist/images/logo-footer.png" alt="Nooturna" class="img-fluid">
 			</div>
-			<div class="col-lg-4 offset-lg-1">
+			<div class="col-lg-4 offset-lg-1 mb-20-m">
 				<img src="assets/dist/images/frase-footer.png" alt="Sinônimo de credibilidade e confiança" class="img-fluid">
 			</div>
 			<div class="col-lg-3 text-right">
@@ -21,7 +21,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<p class="endereco-footer">
-					R. Fernando Silva 190 - 2 andar sala 201, Sorocaba/SP - 15 <span>3227.5788 </span> | 15 <span> 99110.1111 </span>
+					R. Fernando Silva 190 - 2 andar sala 201, Sorocaba/SP - 15 <span>3227.5788 </span> 
 				</p>
 			</div>
 		</div>

@@ -17,4 +17,13 @@
 			font-weight: 400;
 		}
 	}
+	@media (max-width: 550px) {
+		margin-bottom: 20px;
+		padding: 20px 0;
+		h1 {
+			small {
+				display: block;
+			}
+		}
+	}
 }

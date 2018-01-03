@@ -4,11 +4,13 @@
 		<!-- Meta config -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11">
-        <meta name="theme-color" content="#FF045E">
+        <meta name="theme-color" content="#000">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!-- Title -->
 		<title> Contato | Grupo Nooturna </title>
 		<!-- Stylesheets -->
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
 		<link rel="stylesheet" href="assets/dist/css/style.min.css">
         <link rel="icon" type="image/ico" href="">
 	</head>
@@ -30,22 +32,22 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 foo">
-					<form action="" class="form-contact">
+					<form method="POST" class="form-contact" id="form_contato">
 						<div class="form-group">
-							<label for="exampleInputEmail1">Seu nome (obrigatório)</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+							<label>Seu nome (obrigatório)</label>
+							<input type="text" class="form-control" id="name" name="name" required>
 						</div>
 						<div class="form-group">
-							<label for="exampleInputEmail1">Seu e-mail (obrigatório)</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+							<label>Seu e-mail (obrigatório)</label>
+							<input type="email" class="form-control" id="email" name="email" required>
 						</div>
 						<div class="form-group">
-							<label for="exampleInputEmail1">Assunto</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+							<label>Assunto</label>
+							<input type="text" class="form-control" id="assunto" name="assunto">
 						</div>
 						<div class="form-group">
-							<label for="exampleFormControlTextarea1">Sua mensagem</label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							<label>Sua mensagem</label>
+							<textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
 						</div>
 						<div class="form-group">
 							<div class="form-group">

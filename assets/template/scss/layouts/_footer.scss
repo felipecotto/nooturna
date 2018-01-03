@@ -47,10 +47,27 @@ footer {
 		}
 
 	}
+	@media (max-width: 768px) {
+		padding: 20px 0;
+		padding-top: 30px;
+		img {
+			display: block; 
+			margin: 0 auto;
+		}
+		.endereco-footer {
+			text-align: center;
+		}
+		.social-media-footer  {
+			ul {
+				text-align: center;
+			}
+		}
+	}
 }
 
-@media (max-width: 650px){
+@media (max-width: 768px) {
 	.mb-20-m {
 		margin-bottom: 20px;
 	}
 }
+

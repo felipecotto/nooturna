@@ -4,24 +4,26 @@
 		<!-- Meta config -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11">
-        <meta name="theme-color" content="#FF045E">
+        <meta name="theme-color" content="#000">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!-- Title -->
 		<title> Grupo Nooturna </title>
 		<!-- Stylesheets -->
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
 		<link rel="stylesheet" href="assets/dist/css/swiper.css">
 		<link rel="stylesheet" href="assets/dist/css/style.min.css">
-
-		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
         <link rel="icon" type="image/ico" href="">
 	</head>
 	<body class="home">
 
 		<section class="video">
-			<video autoplay loop poster="assets/dist/images/videotorres.jpg" class="bg_video">
-				<source src="assets/dist/images/video/video-w.webm" type="video/webm">
+			<video autoplay="autoplay" loop poster="assets/dist/images/videotorres.jpg" class="bg_video">
 				<source src="assets/dist/images/video/video-m.mp4" type="video/mp4">
+				<source src="assets/dist/images/video/video-w.webm" type="video/webm">
+
+				<p class="text-center">Seu navegador não suporta o vídeo HTML5.</p>
+				
 			</video> 
 			<img src="assets/dist/images/video/assinatura-video.png" alt="Logo Nooturna" class="img-fluid assinatura">
 		</section>
@@ -34,7 +36,7 @@
 					<div class="swiper-slide banner banner-01">
 						<div class="container-fluid">
 							<div class="row d-flex align-items-center">
-								<div class="col-lg-6 text-left">
+								<div class="col-lg-6 text-left p-b-5">
 									<a href="https://www.facebook.com/nooturna/" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
 									<a href="https://www.instagram.com/nooturna/" target="_blank" class="social"><i class="fa fa-instagram"></i></a>
 								</div>
@@ -48,8 +50,12 @@
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-lg-5">
-									<h1>Staff Eventos</h1>
-									<p> <img src="assets/dist/images/nt-txt.png" alt="Nooturna" class="img-fluid"> desenvolveu pacotes diferenciados pensando na organização de casamentos e eventos em geral!</p>
+									<h1 class="c-white-mobile">Staff Eventos</h1>
+									<p class="c-white-mobile"> a 
+										<img src="assets/dist/images/nt-txt.png" alt="Nooturna" class="img-fluid black">
+										<img src="assets/dist/images/nt-txt-white.png" alt="Nooturna" class="img-fluid white">
+										desenvolveu pacotes diferenciados pensando na organização de casamentos e eventos em geral!
+									</p>
 									<div class="text-center">
 										<a href="eventos-staff.php" class="action-banner-02">Saiba Mais</a>
 									</div>
@@ -73,7 +79,7 @@
 									<a href="detetive-particular.php" class="action-banner-03">Saiba Mais</a>
 								</div>
 								<div class="col-lg-3 offset-1">
-									<img src="assets/dist/images/escudo-banner.png" alt="Nooturna" class="img-fluid m-0-auto">
+									<img src="assets/dist/images/escudo-banner.png" alt="Nooturna" class="img-fluid m-0-auto img-banner-03">
 								</div>
 							</div>
 						</div>
@@ -135,7 +141,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="row d-flex align-items-center">
+			<div class="row d-flex align-items-center m-mb-50">
 				<div class="col-lg-8 foo">
 					<img src="assets/dist/images/cell-mockup.png" alt="Redes Sociais Nooturna" class="img-fluid">
 				</div>

@@ -8,11 +8,14 @@
 				</a>	
 			</div>
 			<div class="col-lg-8 text-right">
+				<a href="javascript:;" class="btn-menu-mobile">
+					<i class="mdi mdi-menu" aria-hidden="true"></i>
+				</a>
 				<nav class="menu">
 					<ul>
 						<!-- <li><a href="#">home</a></li> -->
 						<li><a href="sobre.php" class="<?=($pagina == 'sobre'? 'active' : '')?>">Sobre Nós</a></li>
-						<li>
+						<li class="p-relative">
 							<a href="javascript:;" class="open-submenu">Serviços</a>
 							<ul  class="sub-menu">
 								<li>

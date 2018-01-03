@@ -4,11 +4,13 @@
 		<!-- Meta config -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11">
-        <meta name="theme-color" content="#FF045E">
+        <meta name="theme-color" content="#000">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!-- Title -->
 		<title> Sobre Nós | Grupo Nooturna </title>
 		<!-- Stylesheets -->
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
 		<link rel="stylesheet" href="assets/dist/css/style.min.css">
         <link rel="icon" type="image/ico" href="">
 	</head>

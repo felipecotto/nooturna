@@ -13,7 +13,7 @@
 		height: 100vh;
 		background-color: #fff;
 		position: relative;
-		@media (max-width: 768px) {
+		@media (max-width: 1025px) {
 			display: none;
 		}
 		&:after {
@@ -196,6 +196,35 @@
 		.asterisco {
 			color: #710000;
 		}
+		.c-white-mobile {
+			img.white {
+				display: none;
+			}
+		}
+		@media (max-width: 768px) {
+			background-image: url(../images/banners/banner-rotativo-02-mobile.jpg);
+			background-position: left;
+			h1 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 12px;
+				text-align: left;
+			}
+			a.action-banner-02 {
+				font-size: 12px;
+				margin-top: 15px;
+			}
+			.c-white-mobile {
+				color: #fff;
+				img.black {
+					display: none;
+				}
+				img.white {
+					display: inline-block;
+				}
+			}
+		}
 	}
 	&.banner-03 {
 		background-image: url(../images/banners/banner-rotativo-03.jpg);
@@ -238,6 +267,20 @@
 	        	color: #000;
 	        }
 		}
+		@media (max-width: 768px) {
+			h2 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 12px;
+			}
+			a.action-banner-03 {
+				font-size: 12px;
+			}
+			img.img-banner-03 {
+				display: none;
+			}
+		}
 	}
 	&.banner-04 {
 		background-image: url(../images/banners/banner-rotativo-04.jpg);
@@ -270,6 +313,15 @@
 	        	background-color: #710000;
 	        	color: #e9ecf3;
 	        }
+		}
+		@media (max-width: 768px) {
+			background-image: url(../images/banners/banner-rotativo-04-mobile.jpg); 
+			-ms-flex-align: flex-start;
+			align-items: flex-start;
+			p {
+				text-shadow: 1px 1px rgba(0,0,0,0.9);
+				color: #fff;
+			}
 		}
 	}
 }

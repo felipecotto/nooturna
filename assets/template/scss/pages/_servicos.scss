@@ -4,6 +4,9 @@
 		border-top: solid 8px #d2ae6d;
 		.logo-escuro {
 			display: block;
+			@media (max-width: 768px) {
+				margin: 0 auto;
+			}
 		}
 		.logo-claro {
 			display: none;
@@ -26,29 +29,50 @@
 				}
 			}
 		}
+		.btn-menu-mobile {
+			@media (max-width: 768px) {
+				color: #fff;
+			}
+		}
 	}
 	.banner-servicos  {
 		background-size: cover;
 		min-height: 400px;
 		background-position: center;
 		margin-bottom: 100px;
+		@media (max-width: 550px) {
+			margin-bottom: 30px;
+			min-height: 200px;
+		}
 		&.patrimonial {
 			background-image: url(../images/capa-patrimonial.jpg);
+			@media (max-width: 550px) {
+				background-position: left;
+			}
 		}
 		&.capa-portaria {
 			background-image: url(../images/capa-portaria.jpg);
+			@media (max-width: 550px) {
+				background-position: right;
+			}
 		}
 		&.seguranca-pessoal {
 			background-image: url(../images/capa-seguranca-pessoal.jpg);
 		}
 		&.detetive {
 			background-image: url(../images/capa-detetive.jpg);
+			@media (max-width: 550px) {
+				background-position: right;
+			}
 		}
 		&.escolta {
 			background-image: url(../images/capa-escolta.jpg);
 		}
 		&.eventos {
 			background-image: url(../images/capa-eventos.jpg);
+			@media (max-width: 550px) {
+				background-position: right;
+			}
 		}
 		&.festa {
 			background-image: url(../images/capa-festa.jpg);

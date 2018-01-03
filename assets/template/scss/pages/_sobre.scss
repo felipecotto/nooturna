@@ -4,6 +4,9 @@
 		border-top: solid 8px #d2ae6d;
 		.logo-escuro {
 			display: block;
+			@media (max-width: 768px) {
+				margin: 0 auto;
+			}
 		}
 		.logo-claro {
 			display: none;
@@ -26,15 +29,26 @@
 				}
 			}
 		}
+		.btn-menu-mobile {
+			@media (max-width: 768px) {
+				color: #fff;
+			}
+		}
 	}
 	h1 {
 		font-family: $font-title-1;
 		font-size: 36px;
 		margin-bottom: 50px;
+		@media (max-width: 550px) {
+			margin-bottom: 20px;
+		}
 	}
 	.detalhe-top {
 		position: relative;
 		padding-bottom: 50px;
+		@media (max-width: 550px) {
+			padding-bottom: 140px;
+		}
 		&:before {
 			position: absolute;
 			z-index: 5;
@@ -47,11 +61,19 @@
 			display: block;
 			background-size: cover;
 			background-repeat: no-repeat;
+			@media (max-width: 550px) {
+				display: none; 
+				opacity: 0;
+			}
 		}
 	}
 	.bg-about {
 		position: relative; 
 		height: 1000px;
+		@media (max-width: 550px) {
+			display: none; 
+			opacity: 0;
+		}
 		&:before {
 			background-image: url(../images/bond.png);
 			content: '';
@@ -70,18 +92,24 @@
 		background-color: #c6a260;
 		padding: 50px 0 100px 0;
 		position: relative;
+		@media (max-width: 550px) {
+			padding-bottom: 30px;
+		}
 		&:before {
 			position: absolute;
 			background-image: url(../images/about-after.png);
 			content: '';
-			top: -311px;
+			top: -200px;
 			left: 0;
 			width: 100%;
 			height: 320px;
-			z-index: 2;
+			z-index: 0;
 			display: block;
 			background-size: cover;
 			background-repeat: no-repeat;
+			@media (max-width: 550px) {
+				background-position: center;
+			}
 		}
 		img {
 			margin-bottom: 20px;
